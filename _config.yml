@@ -4,7 +4,7 @@
 
 title: "Suspicious Kingfisher Art & Glassworks"
 author: "Suspicious Kingfisher Art & Glassworks"
-copyright: "2025"  # Copyright year to be placed in the footer
+copyright: "2026"  # Copyright year to be placed in the footer
 logo: "logo.png"
 version: "0.01 (Demo)"
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
