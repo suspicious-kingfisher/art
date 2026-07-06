@@ -65,7 +65,11 @@ Cassie is a wildlife ecologist and artist, based in Edmonton, Alberta, whose pri
 
 *<font size="2">Suspicious Kingfisher Art & Glassworks respectfully acknowledges that we are located on the traditional lands of Treaty 6. This territory has been traditional and ancestral land of the Cree, Dene, Blackfoot, Ojibway/Saulteaux, Nakota Sioux, Métis, and many others whose histories, languages, and cultures continue to influence our vibrant community.</font>*
 
-<font size="4.5"><span style="color:whitesmoke">.</font></span>
+:::::{note}
+Please note that I am just getting Etsy setup, and therefore not all available items are listed in my Etsy shop. Please contact me with inquiries, or for commissions.
+:::::
+
+<!--<font size="4.5"><span style="color:whitesmoke">.</font></span>-->
 ::::::
 :::::::
 
@@ -79,6 +83,7 @@ Cassie is a wildlife ecologist and artist, based in Edmonton, Alberta, whose pri
 ::::::::{tab-set}
 
 :::::::{tab-item} Stained Glass
+
 ::::::{grid} 3
 :gutter: 3
 :class-container: wrapper
