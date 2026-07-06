@@ -265,17 +265,75 @@ Cassie is a wildlife ecologist and artist, based in Edmonton, Alberta, whose pri
 :::::::
 
 :::::::{tab-item} Beading
-```{figure} ./02_images/00_coming_soon.png
-:width: 300px
-:align: center
-```
-:::::::
+::::::{grid} 3
+:gutter: 3
+:class-container: wrapper
 
-:::::::{tab-item} Drawing
-```{figure} ./02_images/00_coming_soon.png
+:::::{grid-item-card}
+```{figure} ./02_images/beading/PXL_20260706_010024623.jpg
 :width: 300px
 :align: center
+:class:img_grid
 ```
+<!--lanyards-->
+:::::
+
+:::::{grid-item-card}
+```{figure} ./02_images/beading/mixedstyle1_IMG_20250903_173739_303.jpg
+:width: 300px
+:align: center
+:class:img_grid
+```
+<!--mixed1-->
+:::::
+
+:::::{grid-item-card}
+```{figure} ./02_images/beading/mixedstyle3_IMG_20250903_172046_487.jpg
+:width: 300px
+:align: center
+:class:img_grid
+```
+<!--mixed3-->
+:::::
+
+
+:::::{grid-item-card}
+```{figure} ./02_images/beading/IMG_20250916_234801_331.jpg
+:width: 300px
+:align: center
+:class:img_grid
+```
+<!--purple-->
+:::::
+
+
+:::::{grid-item-card}
+```{figure} ./02_images/beading/IMG_20250903_170602_729.jpg
+:width: 300px
+:align: center
+:class:img_grid
+```
+<!--mixed2-->
+:::::
+
+:::::{grid-item-card}
+```{figure} ./02_images/beading/gold_17878232610401387.jpg
+:width: 300px
+:align: center
+:class:img_grid
+```
+<!--striped-->
+:::::
+
+:::::{grid-item-card}
+```{figure} ./02_images/beading/markup_293.png
+:width: 300px
+:align: center
+:class:img_grid
+```
+<!--gold-->
+:::::
+
 :::::::
 
 ::::::::
