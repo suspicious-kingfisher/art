@@ -13,7 +13,7 @@ kernelspec:
 editor_options:
   markdown:
     wrap: none
-title: Suspicious Kingfisher Art & Glassworks
+title: "Suspicious Kingfisher Art & Glassworks"
 ---
 <style>
   .bd-page-width {
