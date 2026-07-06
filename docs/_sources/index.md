@@ -1,4 +1,5 @@
 ---
+title: "Suspicious Kingfisher Art & Glassworks"
 jupytext:
   formats: md:myst
   text_representation:
@@ -13,7 +14,6 @@ kernelspec:
 editor_options:
   markdown:
     wrap: none
-title: "Suspicious Kingfisher Art & Glassworks"
 ---
 <style>
   .bd-page-width {
