@@ -30,26 +30,23 @@ h3 {
 
 </style>
 
-<!-- ```{include} include/00_home_02_howworks_recs.md
-```   --> 
-
 :::::::{grid} 2
 :gutter:0
-:padding:2
+:padding:1
 :margin:0
 
 ::::::{grid-item}
-:columns: 4
+:columns: 3
 
 :::{figure} ./logo.png
-:width: 75%
+:width: 90%
 :align: left
 :::
 
 ::::::
 
 ::::::{grid-item}
-:columns: 8
+:columns: 9
 
 (home)=
 # Suspicious Kingfisher Art & Glassworks
@@ -75,270 +72,21 @@ Please note that I am just getting Etsy setup, and therefore not all available i
 
 ::::::::{card}
 :class-card: grid-background-white
-:padding: 3
+:padding: 2
 
 
 ## Gallery
 
 ::::::::{tab-set}
 
-:::::::{tab-item} Stained Glass
-
-::::::{grid} 3
-:gutter: 3
-:class-container: wrapper
-
-:::::{grid-item-card} Photo frames
-```{figure} ./02_images/stained-glass/PXL_20260705_155442173~4_clipped.jpg
-:width: 300px
-:align: center
-:class:img_grid
+:::::::{tab-item} Stained glass
+```{include} 03_include/stained_glass.md
 ```
-<!--**Bold text** Text-->
-:::::
-
-:::::{grid-item-card} Taiga Sheetweb Spider
-```{figure} ./02_images/stained-glass/PXL_20260614_183535129.RAW-01.MP_clipped.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Sunflower panel
-```{figure} ./02_images/stained-glass/18314613838287695.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Nuthatch panel
-```{figure} ./02_images/stained-glass/17880911490563268.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Swan panel
-```{figure} ./02_images/stained-glass/18122770150633418.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Sunflower
-```{figure} ./02_images/stained-glass/18004182764917083.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Woodpecker
-```{figure} ./02_images/stained-glass/18328285600216764.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Robin panel
-```{figure} ./02_images/stained-glass/robin_panel_18089730902209085.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Stag beetle
-```{figure} ./02_images/stained-glass/beetle_stag_IMG_20260427_225954_484.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Barn owl
-```{figure} ./02_images/stained-glass/owl_main.png
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Raven
-```{figure} ./02_images/stained-glass/raven_PXL_20250114_160633801.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Bighorn sheep
-```{figure} ./02_images/stained-glass/ram_20250314-010118_square.png
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Raven skull
-```{figure} ./02_images/stained-glass/skull_raven2_18063210491480533.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Floating fish
-```{figure} ./02_images/stained-glass/fish_PXL_20250114_160604490_square_clipped.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Hummingbird (3D)
-```{figure} ./02_images/stained-glass/18047438630744334.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Oyster mushroom
-```{figure} ./02_images/stained-glass/mushroom_oyster_PXL_20250114_160715140_clipped.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-
-:::::{grid-item-card} Chickadee (3D)
-```{figure} ./02_images/stained-glass/chickadee_PXL_20241231_012403622_clippped.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
-:::::
-
-:::::{grid-item-card} UFO
-```{figure} ./02_images/stained-glass/Screenshot2025-09-03_123336.png
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--**Bold text** Text-->
-:::::
-
 :::::::
 
 :::::::{tab-item} Beading
-::::::{grid} 3
-:gutter: 3
-:class-container: wrapper
-
-:::::{grid-item-card}
-```{figure} ./02_images/beading/PXL_20260706_010024623.jpg
-:width: 300px
-:align: center
-:class:img_grid
+```{include} 03_include/beading.md
 ```
-<!--lanyards-->
-:::::
-
-:::::{grid-item-card}
-```{figure} ./02_images/beading/mixedstyle1_IMG_20250903_173739_303.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--mixed1-->
-:::::
-
-:::::{grid-item-card}
-```{figure} ./02_images/beading/mixedstyle3_IMG_20250903_172046_487.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--mixed3-->
-:::::
-
-
-:::::{grid-item-card}
-```{figure} ./02_images/beading/IMG_20250916_234801_331.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--purple-->
-:::::
-
-
-:::::{grid-item-card}
-```{figure} ./02_images/beading/IMG_20250903_170602_729.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--mixed2-->
-:::::
-
-:::::{grid-item-card}
-```{figure} ./02_images/beading/gold_17878232610401387.jpg
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--striped-->
-:::::
-
-:::::{grid-item-card}
-```{figure} ./02_images/beading/markup_293.png
-:width: 300px
-:align: center
-:class:img_grid
-```
-<!--gold-->
-:::::
-
 :::::::
 
 ::::::::

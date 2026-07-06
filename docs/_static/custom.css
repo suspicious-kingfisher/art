@@ -1,3 +1,45 @@
+/*
+https://stackoverflow.com/questions/63713657/how-do-i-make-my-grid-template-mobile-friendly
+*/
+
+.grid {
+  display: grid;
+  /* one column with three rows for mobile */
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "Title"
+    "Content-Upper"
+    "Content-Lower";
+  grid-gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    /* two columns with two rows for tablet and up */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "Title Content-Upper"
+      "Title Content-Lower";
+    grid-gap: 20px;
+  }
+}
+.Title {
+  grid-area: Title;
+}
+.Content-Upper {
+  grid-area: Content;
+}
+.Content-Lower {
+  grid-area: Content;
+  border-style: solid 2px black;
+}
+
+
+
+
+
 /* https://pydata-sphinx-theme.readthedocs.io/en/v0.9.0/user_guide/customizing.html */
 /* anything related to the light theme */
 html[data-theme="light"] {
@@ -61,16 +103,36 @@ body {
     background: whitesmoke;
 }
 
-/* line-height: 1.4;*/
-/*    background: #e8e9e5b;*/
-/*    background: #e5e5e5;*/
-/*    background: #cfcfcf;*/
-/* custom.css */
-/*.custom-icon {*/
-/*    width: 30px;*/
-/*    height: 30px;*/
- /*   margin-right: 10px;  /* Space between icon and text */
-/*}*/
+
+.grid-background-grey {
+    background-color: #f0f8ff;
+    /* padding: 20px;  Optional: Add padding to grid items */
+    /* border-radius: 8px;  Optional: Round the corners */
+}
+
+.grid-background-white {
+    background-color: white;
+    /* padding: 20px;  Optional: Add padding to grid items */
+    /* border-radius: 8px;  Optional: Round the corners */
+}
+
+div.img_grid {
+  :width: 100%;
+  :align: center;
+}
+
+/*
+ line-height: 1.4;
+    background: #e8e9e5b;
+    background: #e5e5e5;
+    background: #cfcfcf;
+ custom.css 
+.custom-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;   Space between icon and text 
+}
+
 
 .class-transparent {
  --sd-color-card-background: transparent;
@@ -108,19 +170,7 @@ body {
   --sd-color-card-background: #DAE8FC;
 }
 
-
-.grid-background-grey {
-    background-color: #f0f8ff;
-    /* padding: 20px;  Optional: Add padding to grid items */
-    /* border-radius: 8px;  Optional: Round the corners */
-}
-
-.grid-background-white {
-    background-color: white;
-    /* padding: 20px;  Optional: Add padding to grid items */
-    /* border-radius: 8px;  Optional: Round the corners */
-}
-
+*/
 
 table {
     font-size: 14px;
