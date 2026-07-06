@@ -1,0 +1,302 @@
+#######################################################################################
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: "Suspicious Kingfisher Art & Glassworks"
+author: "Suspicious Kingfisher Art & Glassworks"
+copyright: "2025"  # Copyright year to be placed in the footer
+logo: "logo.png"
+version: "0.01 (Demo)"
+# Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
+exclude_patterns: ["**00_scratch",.obsidian,_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
+# Auto-exclude files not in the toc
+only_build_toc_files: TRUE
+
+#######################################################################################
+# Execution settings
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+  
+#execute:
+#  execute_notebooks         : auto  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
+#  cache                     : ""    # A path to the jupyter cache that will be used to store execution artifacts. Defaults to `_build/.jupyter_cache/`
+#  exclude_patterns          : []    # A list of patterns to *skip* in execution (e.g. a notebook that takes a really long time)
+#  timeout                   : 30    # The maximum time (in seconds) each notebook cell is allowed to run.
+#  run_in_temp               : false # If `True`, then a temporary directory will be created and used as the command working directory (cwd),
+#                                    # otherwise the notebook's parent directory will be the cwd.
+#  allow_errors              : false # If `False`, when a code cell raises an error the execution is stopped, otherwise all cells are always run.
+#  stderr_output             : show  # One of 'show', 'remove', 'remove-warn', 'warn', 'error', 'severe'
+
+#######################################################################################
+# LaTeX-specific settings
+
+# Define the name of the latex output file for PDF builds
+#latex:
+#  latex_documents:
+#    targetname: book.tex
+
+#latex:
+#  latex_engine              : pdflatex  # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
+#  use_jupyterbook_latex     : true # use sphinx-jupyterbook-latex for pdf builds as default
+
+#######################################################################################
+# Parse and render settings
+parse:
+  myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    # - amsmath
+    - attrs_inline
+    - colon_fence
+    - deflist
+    - dollarmath
+    # - html_admonition
+    - html_image
+    - linkify
+    # - replacements
+    # - smartquotes
+    - substitution
+    - tasklist
+    - hardbreaks
+  myst:
+    myst_heading_anchors: 1
+    myst_linkify_fuzzy_links: TRUE
+#  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
+#  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
+  
+# Add a bibtex file so that we can create citations
+#bibtex_bibfiles:
+#  - references.bib
+
+extensions:
+    - myst_parser
+    - sphinx_design
+
+#######################################################################################
+# Launch button settings
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/suspicious-kingfisher/art-glassworks  # Online location of your book
+#   path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: main  # Which branch of the repository should be used when creating links (optional)
+
+##launch_buttons:
+##  notebook_interface        : classic  # The interface interactive links will activate ["classic", "jupyterlab"]
+##  binderhub_url             : ""  # The URL of the BinderHub (e.g., https://mybinder.org)
+##  jupyterhub_url            : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
+##  thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
+##  colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
+
+##  path_to_book              : ""  # A path to your book's folder, relative to the repository root.
+##  branch                    : master  # Which branch of the repository should be used when creating links
+
+#######################################################################################
+# HTML-specific settings
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+
+
+# https://github.com/jupyter-book/jupyter-book/issues/1186
+
+repository:
+  url: https://github.com/suspicious-kingfisher/art-glassworks  # Online location of your book
+  path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: main  # Which branch of the repository should be used when creating links (optional)
+
+html_static_path: ["_static"]
+html_css_files: ["custom.css"]
+html_context: {
+   # ...
+   "default_mode": "light"
+}
+html_sidebars: {
+    "**": ["sbt-sidebar-nav.html"]
+}
+
+sphinx:
+  config:
+    html_theme: pydata_sphinx_theme
+    html_show_sourcelink: false
+    html_theme_options:
+      back_to_top_button: True
+#      pygment_light_style: "a11y-high-contrast-light"
+#      pygment_dark_style: "a11y-high-contrast-dark"
+#      icon_links_label: "Quick Links"
+      collapse_navigation: false
+#      nosidebar: true
+      article_footer_items: []
+      navbar_align: left #content
+      navbar_start: ["navbar-logo"]
+#      navbar_start: ["navbar-logo", "external_links","title"]
+#      navbar_center: ["external_links"]
+      navbar_end: ["icon-links"]
+#      navbar_end: ["icon-links","theme-switcher","sourcelink"]
+      navbar_persistent: []
+#      content_footer_items: ["copyright", "sphinx-version"]
+#      content_footer_items: ["title"]
+      footer_start: ["copyright"]
+      footer_end: ["author"]  
+#      footer_center: ["title"]
+#      sidebar_includehidden: false
+      secondary_sidebar_position: left
+      sidebars:
+        live: true  # Enable live TOC
+        menu:
+#          - file: intro
+#         - file: chapter1
+#          - file: chapter2
+          - title: 'External Link'
+            url: https://example.com
+#          - title: 'Documentation'
+#            file: docs/extra_documentation
+      secondary_sidebar: false
+      secondary_sidebar_items: []
+#      logo: {
+#        "text": "Home",
+#        "alt_text": "Remote Camera Decision Support Tool",
+#      }
+#     icon_links: [
+#          {
+#              "name": "Email",
+#              "url": "mailto:suspicious.kingfisher.art@gmail.com",
+#              "icon": "fa-solid fa-envelope",
+#              "type": "fontawesome",
+#          },
+#              "type": "local",          
+#          {
+#              "name": "Instagram",
+#              "url": "https://www.instagram.com/suspicious.kingfisher.art/",
+#              "icon": "fa-brands fa-instagram",
+#              "type": "fontawesome",
+#          },
+#          {
+#              "name": "Etsy",
+#              "url": "https://www.etsy.com/shop/suspiciouskingfisher",
+#              "icon": "fa-brands fa-etsy",
+#              "type": "fontawesome",
+#          },
+      icon_links: [
+          {
+              "name": "Email",
+              "url": "mailto:suspicious.kingfisher.art@gmail.com",
+              "icon": "_static/email.png",
+              "type": "local",
+          },
+          {
+              "name": "Instagram",
+              "url": "https://www.instagram.com/suspicious.kingfisher.art",
+              "icon": "_static/instagram2.png",
+              "type": "local",
+          },
+          {
+              "name": "Etsy",
+              "url": "https://www.etsy.com/shop/suspiciouskingfisher",
+              "icon": "_static/etsy2.png",
+              "type": "local",
+          },
+        ] ##https://pydata-sphinx-theme.readthedocs.io/en/v0.8.1/user_guide/configuring.html
+#      external_links: [
+#          {"name": "Email",
+#            "url": "mailto:suspicious.kingfisher.art@gmail.com", 
+#            "attributes": {"target" : "_blank"},
+#            "icon": "fa-solid fa-envelope",
+#            "type": "fontawesome",
+#          },
+#          {"name": "Instagram",
+#            "url": "https://www.instagram.com/suspicious.kingfisher.art/", 
+#            "attributes": {"target" : "_blank"},
+#            "icon": "fa-brands fa-instagram",
+#            "type": "fontawesome",
+#          },
+#          {"name": "Etsy",
+#            "url": "https://www.etsy.com/shop/suspiciouskingfisher", 
+#            "attributes": {"target" : "_blank"},
+#            "icon": "fa-brands fa-etsy",
+#            "type": "fontawesome",
+#          },
+#        ]
+#      use_download_button: false
+#      use_issues_button: false
+#      use_edit_page_button: false
+#      collapse_navbar: true
+#      article_footer_items: []
+#     content_footer_items: []
+  use_repository_button: true
+
+parse:
+#mystnd:
+#  mystnb_externallink_tabs: True
+#  myst_links_external_new_tab: True
+  myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    # - amsmath
+    - attrs_inline
+    - colon_fence
+    - deflist
+    - dollarmath
+    - fieldlist
+    #- html_admonition
+    # - html_image
+    - linkify
+    # - replacements
+    #- smartquotes
+    - substitution
+    - tasklist
+    #- attrs_block
+    #- attrs_inline
+#    - strikethrough
+## https://myst-parser.readthedocs.io/en/latest/configuration.html
+#  myst:
+#    myst_heading_anchors: 3
+#  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
+#    myst_linkify_fuzzy_links: TRUE
+#    myst_sub_delimiters: TRUE
+#myst_all_links_external: True 
+#  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
+  myst_substitutions:
+    link_ab_metadata: "<a href=\"https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/2_metadata-standards/2_0.1_Citation-and-Info.html\" target=\"_blank\">Remote Camera Metadata Standards for Alberta (RCSC, 2024)</a>"
+    link_surv_guide: "<a href=\"https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/1_survey-guidelines/1_0.1_Citation-and-Info.html\" target=\"_blank\">Remote Camera Survey Guidelines (RCSC et al., 2024)</a>"
+    link_surv_guide_fielddatasheets: "<a href=\"https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.html\" target=\"_blank\">deployment and service/retrieval fieldsheets</a>"
+    link_epicollect_template: "<a href=\"https://five.epicollect.net/project/rcsc-and-wildcam-remote-camera-survey-guidelines\" target=\"_blank\">EpiCollect Template</a>"
+    link_fwmis: "<a href=\"https://www.alberta.ca/wildlife-loadforms.aspx\" target=\"_blank\">https://www.alberta.ca/wildlife-loadforms.aspx</a>"
+    link_launchtool: "http://www.rc-decision-support-tool.ca/voila/render/objective.ipynb?"
+
+  sidebar:
+    live: true  # Enable live TOC
+    menu:
+#      - file: intro
+#     - file: chapter1
+#      - file: chapter2
+      - title: 'External Link'
+        url: https://example.com
+#      - title: 'Documentation'
+#        file: docs/extra_documentation
+
+## https://jupyterbook.org/en/stable/advanced/sphinx.html
+html:
+#  favicon                   : ""  # A path to a favicon image
+#  use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+  use_repository_button     : true  # Whether to add a link to your repository button
+#  use_issues_button         : false  # Whether to add an "open an issue" button
+#  use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
+#  extra_footer              : ""  # Will be displayed underneath the footer.
+#  google_analytics_id       : ""  # A GA id that can be used to track book views.
+#  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
+#  baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+#  analytics:
+
+#  comments:
+#    hypothesis              : false
+#    utterances              : false
+#  announcement              : "" # A banner announcement at the top of the site.
+
+#######################################################################################
+# Advanced and power-user settings
+#sphinx:
+#  extra_extensions:
+#    - sphinx-inline-tabs
+  
+#  local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
+#  recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update (false)
+#  config                    :   # key-value pairs to directly over-ride the Sphinx configuration
