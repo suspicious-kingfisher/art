@@ -2,43 +2,6 @@
 https://stackoverflow.com/questions/63713657/how-do-i-make-my-grid-template-mobile-friendly
 */
 
-.grid {
-  display: grid;
-  /* one column with three rows for mobile */
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-    "Title"
-    "Content-Upper"
-    "Content-Lower";
-  grid-gap: 20px;
-}
-
-@media (min-width: 768px) {
-  .grid {
-    /* two columns with two rows for tablet and up */
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "Title Content-Upper"
-      "Title Content-Lower";
-    grid-gap: 20px;
-  }
-}
-.Title {
-  grid-area: Title;
-}
-.Content-Upper {
-  grid-area: Content;
-}
-.Content-Lower {
-  grid-area: Content;
-  border-style: solid 2px black;
-}
-
-
-
-
 
 /* https://pydata-sphinx-theme.readthedocs.io/en/v0.9.0/user_guide/customizing.html */
 /* anything related to the light theme */
@@ -171,36 +134,3 @@ div.img_grid {
 }
 
 */
-
-table {
-    font-size: 14px;
-    line-height: 1.2;
-    border-collapse: collapse; /* Remove spacing between table borders */
-    width: 100%; /* Make table take full width */
-}
-
-/* Set proportional column widths */
-table colgroup col:nth-child(1) {
-    width: 30%;  /* First column takes 30% of the table width */
-}
-
-table colgroup col:nth-child(2) {
-    width: 45%;  /* Second column takes 50% of the table width */
-}
-
-table colgroup col:nth-child(3) {
-    width: 20%;  /* Third column takes 20% of the table width */
-}
-
-.proportional-table2cols {
-    width: 100%;
-    font-size: 14px;
-}
-
-.proportional-table2cols colgroup col:nth-child(1) {
-    width: 30%;
-}
-
-.proportional-table2cols colgroup col:nth-child(2) {
-    width: 70%;
-}
