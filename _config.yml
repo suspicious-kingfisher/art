@@ -120,6 +120,9 @@ sphinx:
     html_theme: pydata_sphinx_theme
     html_show_sourcelink: false
     html_theme_options:
+      logo:
+        image_light: "logo.png"
+        image_dark: "2026-07-05_Carmen’s version_sticker2_logo_noborder_wt_etsy.png"
       back_to_top_button: True
 #      pygment_light_style: "a11y-high-contrast-light"
 #      pygment_dark_style: "a11y-high-contrast-dark"

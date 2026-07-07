@@ -10,6 +10,11 @@
 @media (min-width: 768px) {
   .custom-grid {
     grid-template-columns: repeat(4, 1fr);
+    padding: 0
+  }
+  .bd-article-container h1 {
+    font-size: 1.8rem !important; /* Adjust to your preferred size */
+    line-height: 1.2 !important;
   }
 }
 

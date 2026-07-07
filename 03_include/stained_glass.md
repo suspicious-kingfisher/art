@@ -112,7 +112,7 @@
 
 :::::::{card} Not for sale
 
-::::::{grid} 4
+::::::{grid} 2 2 4 4
 :gutter: 2
 :class-container: wrapper
 
