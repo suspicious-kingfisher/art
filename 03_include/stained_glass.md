@@ -1,8 +1,9 @@
 :::::::{card}
 
-::::::{grid} 4
+::::::{grid} 2 2 4 4
 :gutter: 2
 :class-container: wrapper
+<!--:class-container: wrapper custom-grid-->
 
 :::::{grid-item-card} Available
 ```{figure} ./02_images/stained-glass/PXL_20260705_155442173~4_clipped.jpg

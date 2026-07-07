@@ -1,6 +1,24 @@
-/*
-https://stackoverflow.com/questions/63713657/how-do-i-make-my-grid-template-mobile-friendly
-*/
+/* Base style: 2 columns on mobile/small screens */
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+
+/* Desktop style: Switch to 4 columns on larger viewports */
+@media (min-width: 768px) {
+  .custom-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Ensure images or cards inside the grid don't overflow */
+.custom-grid > * {
+  min-width: 0;
+  width: 100%;
+}
+
 
 
 /* https://pydata-sphinx-theme.readthedocs.io/en/v0.9.0/user_guide/customizing.html */
@@ -9,6 +27,12 @@ html[data-theme="light"] {
     background: grey;
   --pst-color-primary: rgb(69 157 185);
 }
+
+html[data-theme="dark"] {
+    background: black;
+    --pst-color-primary: white;
+}
+
 
 .sb-site-main {
     display: flex;
@@ -21,10 +45,15 @@ html[data-theme="light"] {
 }
 
 .bd-main .bd-content .bd-article-container {
-    max-width: 95%;  /* default is 60em */
+   /* max-width: 95%;  /* default is 60em */
+     min-width: 100%;
+     max-width: 100%;
   }
+  
 .bd-page-width {
-    max-width: 93%;  /* default is 88rem */
+    /*max-width: 93%;  /* default is 88rem */
+    min-width: 90%;
+    max-width: 90%;
 }
 
 /* Un-hide the link text that is hidden by the theme */
@@ -37,14 +66,8 @@ html[data-theme="light"] {
   margin-right: 0.25rem;
 }
 
-/* h1 {*/
-/*     font-size: 2rem;*/
-/*     font-weight: bold;*/
-/*     margin-top: 5px;*/
-/*     margin-bottom: 20px;*/
-/* }*/
 
-h2 {
+h2.only-light {
     font-size: 1.2rem;
     font-weight: bold;
     color: #2F5496;
@@ -52,7 +75,7 @@ h2 {
     margin-bottom: 1em;
 }
 
-h3 {
+h3.only-light {
     font-size: 1.2rem;
     font-weight: normal;
     font-style: italic;
@@ -61,7 +84,7 @@ h3 {
     margin-bottom: 1em;
 }
 
-body {
+body.only-light {
     line-height: 1.4;
     background: whitesmoke;
 }
@@ -83,54 +106,3 @@ div.img_grid {
   :width: 100%;
   :align: center;
 }
-
-/*
- line-height: 1.4;
-    background: #e8e9e5b;
-    background: #e5e5e5;
-    background: #cfcfcf;
- custom.css 
-.custom-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;   Space between icon and text 
-}
-
-
-.class-transparent {
- --sd-color-card-background: transparent;
-}
-
-.class-prog1 {
-  --sd-color-card-background: #F7F056;
-}
-
-.class-prog2 {
-  --sd-color-card-background: #F7CB45;
-}
-
-.class-prog3 {
-  --sd-color-card-background: #F7CB45;
-}
-
-.class-prog4 {
-  --sd-color-card-background: #D9CCE3;
-}
-
-.class-prog5 {
-  --sd-color-card-background: #EEDD88;
-}
-
-.class-prog6 {
-  --sd-color-card-background: #7BAFDE;
-}
-
-.class-prog7 {
-  --sd-color-card-background: #CCDDAA;
-}
-
-.class-option-button-blue {
-  --sd-color-card-background: #DAE8FC;
-}
-
-*/

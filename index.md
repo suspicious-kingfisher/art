@@ -15,21 +15,6 @@ editor_options:
   markdown:
     wrap: none
 ---
-<style>
-  .bd-page-width {
-     min-width: 90%;
-     max-width: 90%;
-  }
-  .bd-main .bd-content .bd-article-container {
-     min-width: 100%;
-     max-width: 100%;
-  }
-h3 {
-    font-weight: bold;
-    font-size-h3: 22px;
-}
-
-</style>
 
 :::::::{grid} 2
 :gutter:0
